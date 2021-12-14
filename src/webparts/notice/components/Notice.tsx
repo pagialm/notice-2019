@@ -48,7 +48,7 @@ export default class Notice extends React.Component<
           console.log(notice);
           // const imgObj = JSON.parse(notice.Image);
           this.setState({
-            imgUrl: `${notice.Image2.Url}`,
+            imgUrl: `${notice.Image.Url}`,
             Link: `${notice.Link}`,
             title: notice.Title,
           });

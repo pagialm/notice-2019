@@ -46,9 +46,9 @@ export default class Notice extends React.Component<
       if (notices && notices.length > 0) {
         notices.forEach((notice) => {
           console.log(notice);
-          const imgObj = JSON.parse(notice.Image);
+          // const imgObj = JSON.parse(notice.Image);
           this.setState({
-            imgUrl: `${imgObj.serverUrl}${imgObj.serverRelativeUrl}`,
+            imgUrl: `${notice.Image2.Url}`,
             Link: `${notice.Link}`,
             title: notice.Title,
           });
